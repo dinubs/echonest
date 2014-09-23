@@ -1,1 +1,5 @@
-@import url("sc-player-standard/standards.css");@import url("sc-player-standard/structure-horizontal.css");@import url("sc-player-standard/colors-green.css");
+
+iframe {
+	display: block;
+	margin: 10px auto;
+}
