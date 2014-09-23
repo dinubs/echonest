@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+/*
+@import "sc-player-red/standards";
+@import "sc-player-red/structure";
+@import "sc-player-red/colors";*/

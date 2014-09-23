@@ -1,7 +1,14 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
-
+<% embed_info = @client.get('/oembed', :url => @track.permalink_url) %>
+<%= raw(embed_info['html']) %>
 <% @Songs.each do |item| %>
   <%= item[:title] %> -- <%= item[:artist_name] %> 
   <br>
 <% end %>
+<script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
+<script type="text/javascript">
+   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+     player.api_play();
+   });
+</script>
