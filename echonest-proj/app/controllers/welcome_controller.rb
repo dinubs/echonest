@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   def index
   	song = Echonest::Song.new('K1RQLGXWBMUAYZOAI')
 
-	params = { song_min_hotttnesss: 0.3, format: "json"}
+	params = { song_min_hotttnesss: 0.8, format: "json"}
 	@Songs = song.search(params)
 
 	# create a client object with your app credentials
