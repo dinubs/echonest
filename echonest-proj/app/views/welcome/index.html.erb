@@ -1,8 +1,10 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
-<% embed_info = @client.get('/oembed', :url => @track.permalink_url, maxwidth: 320, show_comments: false, :maxheight => 150 ) %>
-<%= raw(embed_info['html']) %>
-<% @Songs.each do |item| %>
-  <%= item[:title] %> -- <%= item[:artist_name] %> 
-  <br>
-<% end %>
+	<% if @search %>
+		<% embed_info = @client.get('/oembed', :url => @track[0].permalink_url, maxwidth: 320, show_comments: false, :maxheight => 150 ) %>
+		<%= raw(embed_info['html']) %>
+		<% @Songs.each do |item| %>
+	  		<%= item[:title] %> -- <%= item[:artist_name] %> 
+	  		<br>
+		<% end %>
+	<% end %>
