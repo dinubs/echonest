@@ -2,7 +2,7 @@ echonest
 ========
 
 
-cd into echones-project
+cd into echonest-project
 
 run rails s
 
