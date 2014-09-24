@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'echonest-ruby-api'
+gem 'echowrap'
 gem 'json'
 gem 'soundcloud'
 # Use ActiveModel has_secure_password

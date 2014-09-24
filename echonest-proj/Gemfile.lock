@@ -39,8 +39,14 @@ GEM
     echonest-ruby-api (0.7.0)
       httparty
       multi_json
+    echowrap (0.1.4)
+      faraday (~> 0.9)
+      multi_json (~> 1.0)
+      simple_oauth (~> 0.2)
     erubis (2.7.0)
     execjs (2.2.1)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
     hashie (2.1.2)
     hike (1.2.3)
     httmultiparty (0.3.15)
@@ -98,6 +104,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_oauth (0.2.0)
     soundcloud (0.3.2)
       hashie (~> 2.0)
       httmultiparty (~> 0.3.0)
@@ -132,6 +139,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   echonest-ruby-api
+  echowrap
   jbuilder (~> 2.0)
   jquery-rails
   json
